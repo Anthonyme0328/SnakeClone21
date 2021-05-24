@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded" , () => {
   let score = 0 // score starts at zero and is updated
   let speed = 0.9 // movement speed of the snake
   let intervalTime = 0 // sets interval time initially to 0 until game is started
-  let interval = 0
-  let i = 5; // time is set to 30 seconds of play time
+  let interval = 0 // initial interval set to 0 reassigned later
+  let i = 30; // time is set to 30 seconds of play time
 
   //timer function that counts down to end game
   function onTimer() {
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded" , () => {
     i--;
     // if time reaches 0 alert pops up
     if (i < 0) {
+      // alert pops up at the end of one second
       alert("time is up game over");
     }
     else {
@@ -48,10 +49,12 @@ document.addEventListener("DOMContentLoaded" , () => {
     intervalTime = 1000
     //sets up initial shape of snake on start
     currentSnake = [2,1,0]
+    // sets the index in array to the first position
     currentIndex = 0
     // sets the inital snake and adds classes of snake to the divs
     currentSnake.forEach(index => squares[index].classList.add("snake"))
     interval = setInterval(moveOutcomes, intervalTime)
+    // calls the timer function
     onTimer()
   }
   
