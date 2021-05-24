@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded" , () => {
   let speed = 0.9 // movement speed of the snake
   let intervalTime = 0 // sets interval time initially to 0 until game is started
   let interval = 0
-  let i = 30; // time is set to 30 seconds of play time
+  let i = 5; // time is set to 30 seconds of play time
 
   //timer function that counts down to end game
   function onTimer() {
