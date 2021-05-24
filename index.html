@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snake the Game</title>
-  <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- html for the start and restart button -->
- <button class="start">
+ <button class="start" id = "start">
      Start/ Restart
    </button>
    
@@ -22,10 +22,12 @@
      </span>   
    </div>
 
+   
    <!-- where the space for the game lives -->
-   <div>
+   <div class="grid center">
      <!-- game is set up on a 10x10 grid -->
-    <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
+    <div class="snake"></div> 
+    <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
     <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
     <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
     <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
@@ -37,6 +39,8 @@
     <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
 
    </div>
-  
+
+    <div> Time: <span id= "timeLeft">30</span></div>
+
 </body>
 </html>
